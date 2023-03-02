@@ -4,10 +4,6 @@
 
 1. Clone the repo:
 
-```
-git clone https://github.com/mondyfy/hls_demo.git && cd hls_demo
-```
-
 2. Install dependencies:
 
 ```
