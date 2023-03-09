@@ -6,7 +6,7 @@ const port = 8000
 http.createServer(function (request, response) {
     console.log('request starting...');
 
-    var filePath = './temp/chunks' + request.url;
+    var filePath = './temp/chunks/videos' + request.url;
 
     fs.readFile(filePath, function(error, content) {
         response.writeHead(200, { 'Access-Control-Allow-Origin': '*' });

@@ -6,7 +6,11 @@ const fs = require('fs');
 const path = require('path');
 
 const dir = path.join(__dirname, '../songs');
-const dest = path.join(__dirname, '../temp/chunks');
+const dest = path.join(__dirname, '../temp/chunks/audio');
+
+if (!fs.existsSync(dest)){
+    fs.mkdirSync(dest, {recursive: true});
+}
 
 const startTime = new Date();
 console.info('> Start reading files', startTime);
